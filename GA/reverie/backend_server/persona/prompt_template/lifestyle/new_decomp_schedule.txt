@@ -1,0 +1,37 @@
+new_decomp_schedule.txt
+
+Variables:
+!<INPUT 0>! -- Name
+!<INPUT 1>! -- Start hour
+!<INPUT 2>! -- End hour
+!<INPUT 3>! -- Original plan
+!<INPUT 4>! -- Doing event
+!<INPUT 5>! -- New event
+!<INPUT 6>! -- New duration
+!<INPUT 7>! -- Start rest time
+!<INPUT 8>! -- Hourly plan
+
+<commentblockmarker>###</commentblockmarker>
+!<INPUT 8>! from !<INPUT 1>! to !<INPUT 2>!.
+Here was !<INPUT 0>!'s originally planned schedule from !<INPUT 1>! to !<INPUT 2>!.
+!<INPUT 3>!
+
+
+But when doing "!<INPUT 4>!", a new event "!<INPUT 5>!" happen for !<INPUT 6>! minutes.
+
+
+Please Revise !<INPUT 0>!'s schedule from !<INPUT 1>! to !<INPUT 2>!:
+
+Your output needs to comply with the following constraints:
+1) The start time of each activity should be consistent with the end time of the previous activity.
+2) The revised schedule should be in the JSON format without any other description.
+
+Here is an example:
+[
+    {
+        "activity": "someone is ...",
+        "start": "xx:xx AM",
+        "end": "xx:xx AM"
+    },
+    ...
+]

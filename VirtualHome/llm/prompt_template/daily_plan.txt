@@ -1,0 +1,27 @@
+daily_plan.txt
+
+Variables:
+!<INPUT 0>! -- Interactive Items
+
+<commentblockmarker>###</commentblockmarker>
+You are a person spending a day at home, and you have the following items available for interaction(format: Room name: items):
+!<INPUT 0>!
+
+You can only interact using the methods provided below:
+Walk, Sit, StandUp, Grab, Open, Close, Put, PutIn, SwitchOn, SwitchOff, Drink, Touch, LookAt
+
+Please design a schedule for your day using these items, including your meals, leisure, and any other activities you might engage in. Your goal is to make this day as interesting and fulfilling as possible.
+
+Your output needs to comply with the following constraints:
+1) Please generate at least 6 different activities.
+2) You should output in the JSON format without any other description, and the activity should be implemented in the sentence structure of "I want to …", Here is an example:
+[
+    {
+        "activity": "I want to ..."
+    },
+    ...
+]
+3) The activity you designed can only interact with the given interactive items.
+4) The activity you designed can only interact with the given methods.
+
+Please generate your activities:

@@ -1,0 +1,42 @@
+get_next_rough_action.txt
+
+Variables:
+!<INPUT 0>! -- Task
+!<INPUT 1>! -- Location
+!<INPUT 2>! -- Agent Info
+!<INPUT 3>! -- Relative Items
+!<INPUT 4>! -- Action Description
+!<INPUT 5>! -- Previous Actions
+
+
+<commentblockmarker>###</commentblockmarker>
+You are now a person doing chores at home. Your task is
+!<INPUT 0>!
+
+Your current location: !<INPUT 1>!
+Your current situation:
+!<INPUT 2>!
+
+
+The relative Items and their properties (the property decide the way to interact with the items):
+!<INPUT 3>!
+
+Candidate action command: Description (with their execution conditions in brackets):
+!<INPUT 4>!
+
+The action command that has already been executed:
+!<INPUT 5>!
+
+In order to complete the task, please generate the next action command
+
+Your output needs to comply with the following constraints:
+1) You should output in the JSON format without any other description. Here is an example:
+{
+    "command": '<command>'
+}
+2) In the `command`, you should only use the given action commands to interact with the given `The relative Items`.
+3) When you need to interact with an object, you should walk close to it first.
+4) You can't use `touch` command to interact object that you are holding.
+5) If you need to interact with items in the room, please ensure at least one hand is free.
+
+Please generate your response:

@@ -1,0 +1,29 @@
+next_day_remember.txt
+
+Variables:
+!<INPUT 0>! -- Name
+!<INPUT 1>! -- Statement
+!<INPUT 2>! -- Time
+
+<commentblockmarker>###</commentblockmarker>
+The following are things !<INPUT 0>! Riven experienced or thought about yesterday:
+!<INPUT 1>!
+
+Given the statements above, is there anything that !<INPUT 0>! should remember as they plan for !<INPUT 2>!?
+
+If there is any scheduling information, be as specific as possible (include date, time, and location if stated in the statement)
+
+Write the response from !<INPUT 0>!'s perspective.
+
+You should output in the JSON format without any other statement, and the activity should be implemented in the sentence structure of "Remember to ..."
+
+Here is an example:
+[
+    {
+        "remind": "Remember to meet <person> at <location> at <time>"
+    },
+    {
+        "remind": "Remember to finish the homework before <time>"
+    },
+    ...
+]

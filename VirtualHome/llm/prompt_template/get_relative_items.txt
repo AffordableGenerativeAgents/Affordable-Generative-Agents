@@ -1,0 +1,22 @@
+get_relative_items.txt
+
+Variables:
+!<INPUT 0>! -- Task
+!<INPUT 1>! -- Interactive Items
+
+
+<commentblockmarker>###</commentblockmarker>
+You are now a person doing chores at home. Your task is !<INPUT 0>!.
+
+Around you, there are the following items you can interact with:
+!<INPUT 1>!
+
+Which items do you think you might use to complete your task?"
+
+Your output needs to comply with the following constraints:
+1) You should output in the JSON format without any other description. Here is an example:
+{
+    "items": ['xxx', 'xxx'...]
+}
+
+Please generate your response:

@@ -1,0 +1,25 @@
+Variables:
+!<INPUT 0>! -- Persona name
+!<INPUT 1>! -- Persona's current arena
+!<INPUT 2>! -- Arena option
+!<INPUT 3>! -- Activity
+!<INPUT 4>! -- Action
+<commentblockmarker>###</commentblockmarker>
+!<INPUT 0>! is planning to go to !<INPUT 1>!, which has sub-areas:
+
+Sub-areas:
+!<INPUT 2>!
+
+!<INPUT 0>!'s Activity: !<INPUT 3>!
+
+!<INPUT 0>!'s Action: !<INPUT 4>!
+
+
+Please select the most likely sub-area !<INPUT 0>! will go to based on his information. Your answer must adhere to the following constraints:
+1) Stay in the current area if the activity can be performed there.
+2) NEVER enter other people's rooms unless it is necessary.
+3) Your choice must be one of the given sub-area options above.
+4) Your answer must be output in JSON format and should not contain any other descriptions:
+{
+  "output": "<sub-area name>"
+}

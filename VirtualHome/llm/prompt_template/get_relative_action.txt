@@ -1,0 +1,49 @@
+get_relative_actions.txt
+
+Variables:
+!<INPUT 0>! -- Task
+!<INPUT 1>! -- Location
+!<INPUT 2>! -- Agent Info
+!<INPUT 3>! -- Relative Items
+
+
+<commentblockmarker>###</commentblockmarker>
+You are now a person doing chores at home. Your task is
+!<INPUT 0>!.
+
+Your current location: !<INPUT 1>!
+Your current situation:
+!<INPUT 2>!
+
+
+The relative Items and their properties (the property decide the way to interact with the items):
+!<INPUT 3>!
+
+Which actions do you think you might use to complete your task?"
+
+List of potential actions (with their execution conditions in brackets):
+Walk: Walks to a room or object (character is not sitting, object is not grabbed)
+Sit: Sit on an object (character is not sitting, character is close to object)
+StandUp: Stand Up (character state is sitting)
+Grab: Grab an object (obj property is grabbable except water, character is close to obj)
+Open: Open an object (obj property is opennable and state is closed, character is close to obj)
+Close: Close an object (obj property is opennable and state is open, character is close to obj)
+Put: Put an obj1 on obj2 (character hold obj1, character is close to obj2)
+PutIn: Put an obj1 inside obj2 (character hold obj1, character is close to obj2, obj2 is not closed)
+SwitchOn: Turn an object on (object has property switch, object state is off, character is close to object)
+SwitchOff: Turn an object off (object has property switch, object state is on, character is close to object)
+Drink: Drink from an object (object property is drinkable or recipient, character is close to object)
+Touch: Touch an object (character is close to object)
+LookAt: Look at an object (character is facing object)
+
+Your output needs to comply with the following constraints:
+1) You should output in the JSON format without any other description. Here is an example:
+{
+    "actions": ['xxx', 'xxx'...]
+}
+2) This step is only for filtering potential actions to be used, so you only need to provide the names of the actions that might be used. for example:
+{
+    "actions": ['Walk', ...]
+}
+
+Please generate your response:

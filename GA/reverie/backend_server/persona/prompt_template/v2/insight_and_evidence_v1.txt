@@ -1,0 +1,37 @@
+insight_and_evidence_v1.txt
+
+Variables: 
+!<INPUT 0>! -- Numbered list of event/thought statements
+!<INPUT 1>! -- target persona name or "the conversation"
+
+<commentblockmarker>###</commentblockmarker>
+I will give you some basic statement and you need to generate high-level insight from them. Your output needs to comply with the following constraints:
+1) You need to tell me the `insight` and the `related_index`.
+2) You need to generate insights according to the specific number I give you.
+3) Your should output in a JSON format without adding any other statement.
+
+
+Here is an example:
+1. Lila is my aunt.
+2. I closed the door and set off for a trip.
+3. Today is a good day.
+4. Lila likes to eat honey.
+5. I plan to travel to Europe.
+6. I tend to drive to travel.
+
+Please generate 2 insights from above statement:
+[
+    {
+        "insight": "My aunt Lila likes to eat honey",
+        "related_index": [1, 4]
+    },
+    {
+        "insight": "I drive to Europe for a trip",
+        "related_index": [2, 5, 6],
+    }
+]
+
+
+!<INPUT 0>!
+
+Please generate !<INPUT 1>! insights from above statement:

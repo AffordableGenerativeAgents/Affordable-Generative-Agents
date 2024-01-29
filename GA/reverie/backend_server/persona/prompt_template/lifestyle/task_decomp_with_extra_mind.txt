@@ -1,0 +1,33 @@
+task_decomp_with_extra_mind.txt
+
+Variables:
+!<INPUT 0>! -- Persona first name
+!<INPUT 1>! -- Commonset
+!<INPUT 2>! -- Hourly plan
+!<INPUT 3>! -- Extra information
+!<INPUT 4>! -- Target Time
+!<INPUT 5>! -- Total Duration
+<commentblockmarker>###</commentblockmarker>
+The following is !<INPUT 0>!'s personal information
+!<INPUT 1>!
+
+!<INPUT 0>!'s hourly plan:
+!<INPUT 2>!
+
+What !<INPUT 0>! is thinking:
+!<INPUT 3>!
+
+In 5 min increments, list the detailed activity !<INPUT 0>! will do From !<INPUT 4>! (total duration in minutes: !<INPUT 5>!)
+
+Your output needs to comply with the following constraints:
+1) You need to response in the JSON format WITHOUT any other description:
+[
+    {
+        "activity": "!<INPUT 0>! is ...",
+        "duration": <int, Unit: Minutes, Multiples of 5>,
+        "left time": <int, Unit: Minutes>
+    }
+    ...
+]
+2) The thoughts in !<INPUT 0>!'s might affect the activity.
+3) The duration of all activities should exactly meet the given total duration. which mean the left time of the final activity should be 0.

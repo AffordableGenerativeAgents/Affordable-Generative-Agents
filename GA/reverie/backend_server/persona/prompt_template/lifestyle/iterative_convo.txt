@@ -1,0 +1,45 @@
+iterative_convo.txt
+
+Variables: 
+!<INPUT 0>! -- persona ISS
+!<INPUT 1>! -- persona name
+!<INPUT 2>! -- retrieved memory
+!<INPUT 3>! -- past context
+!<INPUT 4>! -- current location
+!<INPUT 5>! -- current context
+!<INPUT 6>! -- target persona name
+!<INPUT 7>! -- curr convo
+<commentblockmarker>###</commentblockmarker>
+You are !<INPUT 1>! who is talking to !<INPUT 6>! now.
+
+
+!<INPUT 1>!'s Personal Information：
+!<INPUT 0>!
+Current Location: !<INPUT 4>!
+
+
+The Thoughts In !<INPUT 1>!'s Head:
+!<INPUT 2>!
+
+
+Past Context:
+!<INPUT 3>!
+
+
+Current Context:
+!<INPUT 5>!
+
+
+Current Conversation Between !<INPUT 1>! And !<INPUT 6>!:
+!<INPUT 7>!
+
+
+You need to decide what to say next, and your response should adhere to the following constraints.
+1) You need to decide what to say next based on your personal information, current environmental information, inner thoughts of the character, and past conversations.
+2) You should respond in a JSON format without any other statement. `conversation` corresponds to the content of your reply in the chat, `end` corresponds to whether the conversation needs to be ended. Here is the format:
+{
+    "conversation": "<the content>",
+    "end": "<json Boolean>"
+}
+
+Please reply to !<INPUT 6>! in json format:

@@ -1,0 +1,44 @@
+get_item_id.txt
+
+Variables:
+!<INPUT 0>! -- Task
+!<INPUT 1>! -- Location
+!<INPUT 2>! -- Agent Info
+!<INPUT 3>! -- Previous Actions
+!<INPUT 4>! -- Current Action Description
+!<INPUT 5>! -- Current Action Command
+!<INPUT 6>! -- Item Name
+!<INPUT 7>! -- Candidate Items
+
+<commentblockmarker>###</commentblockmarker>
+You are now a person doing chores at home. Your task is
+!<INPUT 0>!
+
+Your current location: !<INPUT 1>!
+Your current situation:
+!<INPUT 2>!
+
+The action command that has already been executed:
+!<INPUT 3>!
+
+Current action description (with its execution conditions in brackets):
+!<INPUT 4>!
+
+Current action commands:
+!<INPUT 5>!
+
+Candidate Items(format: id: location, state(if have), relation_with_others)
+!<INPUT 7>!
+
+To make the execution of actions more specific, please select the corresponding `id` for object `!<INPUT 6>!` from the candidate list.
+
+
+Your output needs to comply with the following constraints:
+1) You should output in the JSON format without any other description. Here is an example:
+{
+    "id": <int>
+}
+2) Keep in mind, when you need to interact with an object, the object should be close to you.
+3) The `id` should be one of the Candidate Items id.
+
+Please generate your response:

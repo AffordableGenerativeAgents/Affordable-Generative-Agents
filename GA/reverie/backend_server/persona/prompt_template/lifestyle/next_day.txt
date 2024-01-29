@@ -1,0 +1,47 @@
+next_day.txt
+
+Variables:
+!<INPUT 0>! -- Name
+!<INPUT 1>! -- Commonset
+!<INPUT 2>! -- Lifestyle
+!<INPUT 3>! -- Reverie date time now
+!<INPUT 4>! -- First Name
+!<INPUT 5>! -- Start time
+!<INPUT 6>! -- Reminder
+!<INPUT 7>! -- Summary thoughts
+
+<commentblockmarker>###</commentblockmarker>
+Here is !<INPUT 0>!’s personal information
+!<INPUT 1>!
+
+The following content is a reminder from yesterday:
+!<INPUT 6>!
+
+The following content is a summary of yesterday:
+!<INPUT 7>!
+
+In general, !<INPUT 2>!
+Today is !<INPUT 3>!. You need to design !<INPUT 0>!'s plan today in broad-strokes
+
+Your output needs to comply with the following constraints:
+1) Please generate at least 6 different activities.
+2) The start time of each activity should be consistent with the end time of the previous activity.
+3) You should output in the JSON format without any other description, and the activity should be implemented in the sentence structure of "!<INPUT 4>! is…"
+
+Here is an example of John Smith:
+[
+    {
+        "activity": "John is waking up and completing his morning routine",
+        "start": "06:00 AM",
+        "end": "07:00 AM"
+    },
+    {
+        "activity": "John is getting ready for work and making breakfast for himself",
+        "start": "07:00 AM",
+        "end": "08:00 AM"
+    },
+    ...
+]
+4) the `start` and the `end` time should be in the 'xx:xx AM' or 'xx:xx PM' format.
+
+Please generate !<INPUT 4>!'s hourly activities from !<INPUT 5>! to bed time:

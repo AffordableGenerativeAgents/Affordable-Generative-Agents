@@ -1,0 +1,27 @@
+next_day_extra_plan.txt
+
+Variables:
+!<INPUT 0>! -- Name
+!<INPUT 1>! -- Commonset
+!<INPUT 2>! -- Additional information
+
+<commentblockmarker>###</commentblockmarker>
+The following is the !<INPUT 0>!'s personal information
+!<INPUT 1>!
+
+additional information:
+!<INPUT 2>!
+
+Today, !<INPUT 0>! wants to break from her usual routine and do something novel instead. !<INPUT 0>! wants to incorporate the elements from the additional information into !<INPUT 0>!'s new plan. If you were !<INPUT 0>!, what would you want to do? The task to be done must be specific and executable. Write the response from !<INPUT 0>!'s perspective and keep it brief and precise.
+
+You should respond in the JSON format:
+[
+    {
+        "output": "!<INPUT 0>! would want to ... today."
+    },
+    {
+        "output": "!<INPUT 0>! would want to ... today."
+    },
+    ...
+]
+

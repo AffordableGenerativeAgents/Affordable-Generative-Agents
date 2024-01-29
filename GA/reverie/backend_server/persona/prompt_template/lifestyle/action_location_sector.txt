@@ -1,0 +1,34 @@
+Variables:
+!<INPUT 0>! -- Persona name
+!<INPUT 1>! -- Persona living sector
+!<INPUT 2>! -- Persona living arenas
+!<INPUT 3>! -- Persona current sector
+!<INPUT 4>! -- Persona current arenas
+!<INPUT 5>! -- Daily plan
+!<INPUT 6>! -- Activity
+!<INPUT 7>! -- Action
+!<INPUT 8>! -- Arena option
+
+<commentblockmarker>###</commentblockmarker>
+!<INPUT 0>! lives in !<INPUT 1>! that has !<INPUT 2>!.
+
+!<INPUT 0>! is currently in !<INPUT 3>! that has !<INPUT 4>!.
+
+!<INPUT 0>!'s daily plan: !<INPUT 5>!
+
+!<INPUT 0>!'s current activity: !<INPUT 6>!
+
+!<INPUT 0>!'s current Action: !<INPUT 7>!
+
+Please select the most likely area !<INPUT 0>! will go based on the !<INPUT 0>!'s information. The answer should be one of the following area option:
+
+Arena option:
+!<INPUT 8>!
+
+Your answer must adhere to the following constraints:
+1) Stay in the current area if the activity can be done there. Only go out if the activity needs to take place in another place.
+2) Must be one of the "Area options," verbatim.
+3) You should output in the JSON format without any other description:
+{
+  "output": "<arena name>"
+}

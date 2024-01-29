@@ -1,0 +1,40 @@
+get_rough_action.txt
+
+Variables:
+!<INPUT 0>! -- Task
+!<INPUT 1>! -- Location
+!<INPUT 2>! -- Agent Info
+!<INPUT 3>! -- Relative Items
+!<INPUT 4>! -- Action Description
+!<INPUT 5>! -- Action Command
+
+
+
+<commentblockmarker>###</commentblockmarker>
+You are now a person doing chores at home. Your task is
+!<INPUT 0>!
+
+Your current location: !<INPUT 1>!
+Your current situation:
+!<INPUT 2>!
+
+
+The relative Items and their properties (the property decide the way to interact with the items):
+!<INPUT 3>!
+
+Action description (with their execution conditions in brackets):
+!<INPUT 4>!
+
+Corresponding action commands:
+!<INPUT 5>!
+
+Please complete the task using a combination of action commands.
+
+Your output needs to comply with the following constraints:
+1) You should output in the JSON format without any other description. Here is an example:
+{
+    "commands": ['<command 1>', '<command 2>'...]
+}
+2) Keep in mind, when you need to interact with an object, you should walk close to it first.
+
+Please generate your response:

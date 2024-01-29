@@ -1,0 +1,32 @@
+check_task_state.txt
+
+Variables:
+!<INPUT 0>! -- Task
+!<INPUT 1>! -- Location
+!<INPUT 2>! -- Agent Info
+!<INPUT 3>! -- Previous Actions
+
+
+<commentblockmarker>###</commentblockmarker>
+You are now a person doing chores at home. Your task is
+!<INPUT 0>!
+
+Your current location: !<INPUT 1>!
+Your current situation:
+!<INPUT 2>!
+
+
+The action commands that has already been executed:
+!<INPUT 3>!
+
+Please determine whether the task has been completed based on the executed action commands.
+
+Your output needs to comply with the following constraints:
+1) You should output in the JSON format without any other description. Here is an example:
+{
+    "type": '<command str>',
+    "reason": '<reason str>'
+}
+2) The `type` should be among (`success`, `unfinished`), and give the corresponding reason in `reason`.
+
+Please generate your response:

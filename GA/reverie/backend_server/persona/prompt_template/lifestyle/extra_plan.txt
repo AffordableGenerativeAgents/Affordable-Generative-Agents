@@ -1,0 +1,16 @@
+daily_planning_v6.txt
+
+Variables:
+!<INPUT 0>! -- Name
+!<INPUT 1>! -- Commonset
+
+<commentblockmarker>###</commentblockmarker>
+The following is the !<INPUT 0>!'s personal information
+!<INPUT 1>!
+
+!<INPUT 0>! wants to break from her usual routine today and do something novel instead. If you were !<INPUT 0>!, what would you want to do? The task to be done must be specific and executable. Write the response from !<INPUT 0>!'s perspective and keep it brief and precise.
+
+You should respond in the JSON format:
+{
+    "output": "!<INPUT 0>! would want to ... today."
+}

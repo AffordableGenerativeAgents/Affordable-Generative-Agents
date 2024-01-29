@@ -1,0 +1,4 @@
+openai
+ipython
+ipdb
+opencv-python
