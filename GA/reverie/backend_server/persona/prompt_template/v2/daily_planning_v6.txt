@@ -9,7 +9,7 @@ Variables:
 !<INPUT 5>! -- Start time
 
 <commentblockmarker>###</commentblockmarker>
-Here is !<INPUT 0>!’s personal information
+Here is !<INPUT 0>!'s personal information
 !<INPUT 1>!
 
 In general, !<INPUT 2>!

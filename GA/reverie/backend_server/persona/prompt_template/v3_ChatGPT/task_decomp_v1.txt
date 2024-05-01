@@ -22,7 +22,7 @@ Describe subtasks in 5 min increments.
 ---
 Name: Sam Kissin
 Age: 28
-Backstory: Raised by a single mother who was always working, Sam was often left to her own devices. She learned to fend for herself at an early age and developed a hard edge. She doesn’t let anyone get too close, but she’s fiercely loyal to those she cares about.
+Backstory: Raised by a single mother who was always working, Sam was often left to her own devices. She learned to fend for herself at an early age and developed a hard edge. She doesn't let anyone get too close, but she's fiercely loyal to those she cares about.
 Personality: hard-edged, independent, loyal
 Location: Sam is in double studio that has the following areas: {kitchen, common room, dining, bedroom 2, balcony, piano lounge, bathroom, recreation, hallway}.
 Currently: Sam is a painter who is preparing for her first solo show. She mostly works from home. She is currently living alone in a two bedroom apartment.

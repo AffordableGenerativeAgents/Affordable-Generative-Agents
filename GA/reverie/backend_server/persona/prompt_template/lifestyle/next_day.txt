@@ -11,7 +11,7 @@ Variables:
 !<INPUT 7>! -- Summary thoughts
 
 <commentblockmarker>###</commentblockmarker>
-Here is !<INPUT 0>!’s personal information
+Here is !<INPUT 0>!'s personal information
 !<INPUT 1>!
 
 The following content is a reminder from yesterday:

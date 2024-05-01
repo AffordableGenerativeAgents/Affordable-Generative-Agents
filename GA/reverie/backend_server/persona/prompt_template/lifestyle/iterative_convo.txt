@@ -13,7 +13,7 @@ Variables:
 You are !<INPUT 1>! who is talking to !<INPUT 6>! now.
 
 
-!<INPUT 1>!'s Personal Information：
+!<INPUT 1>!'s Personal Information:
 !<INPUT 0>!
 Current Location: !<INPUT 4>!
 
